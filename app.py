@@ -71,7 +71,7 @@ with st.sidebar:
     st.image("https://media.giphy.com/media/Y4z9olnoVl5QI/giphy.gif", use_column_width=True)
     st.markdown("Upload an audio file and visualize all its components. Get real-time signal interpretation using Mistral LLM.")
 
-st.markdown(\"\"\"
+st.markdown("""
     <style>
         .stApp {
             background-color: #f0f2f6;
@@ -80,7 +80,8 @@ st.markdown(\"\"\"
             padding-top: 2rem;
         }
     </style>
-\"\"\", unsafe_allow_html=True)
+""", unsafe_allow_html=True)
+
 
 st.title("🎧 WaveLine – AI Signal Analyzer")
 
