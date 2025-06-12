@@ -8,11 +8,6 @@ def load_audio(file_path):
     y, sr = librosa.load(file_path, sr=None)
     return y, sr
 
-def compute_dwt(y, wavelet='db4', level=4):
-    coeffs = pywt.wavedec(y, wavelet=wavelet, level=level)
-    coeff_array, coeff_slices = pywt.coeffs_to_array(coeffs)
-    return coeff_array
-
 def extract_features(y, sr):
     zcr = librosa.feature.zero_crossing_rate(y=y)[0]
     rms_energy = librosa.feature.rms(y=y)[0]
@@ -23,7 +18,6 @@ def extract_features(y, sr):
     oenv = librosa.onset.onset_strength(y=y, sr=sr)
     tempogram = librosa.feature.tempogram(onset_envelope=oenv, sr=sr)
     freqs, psd = welch(y, sr)
-    wavelet = compute_dwt(y)
 
     stats_summary = {
         "Duration (s)": round(librosa.get_duration(y=y, sr=sr), 2),
@@ -43,6 +37,5 @@ def extract_features(y, sr):
         "tempogram": tempogram,
         "psd_freqs": freqs,
         "psd": psd,
-        "wavelet": wavelet,
         "stats_summary": stats_summary
     }
