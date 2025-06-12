@@ -1,0 +1,9 @@
+streamlit
+librosa
+numpy
+scipy
+plotly
+soundfile
+pywt
+mistralai
+python-dotenv
