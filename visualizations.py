@@ -29,5 +29,9 @@ def plot_tempogram(tempogram):
 def plot_power_spectrum(freqs, psd):
     return go.Figure([go.Scatter(x=freqs, y=psd)]).update_layout(title="Power Spectrum", xaxis_title="Hz", yaxis_title="Power")
 
-def plot_wavelet(coeffs):
-    return px.imshow(np.abs(coeffs), origin="lower", title="Wavelet Scalogram")
+def plot_wavelet(coeff_array):
+    import plotly.express as px
+    from numpy import abs
+    fig = px.imshow(np.abs(coeff_array), origin='lower', title="Wavelet Transform (DWT)")
+    return fig
+

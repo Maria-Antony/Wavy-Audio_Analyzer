@@ -12,7 +12,7 @@ load_dotenv()
 
 
 st.set_page_config(page_title="SignalScope AI", layout="wide")
-st.title("🎧 SignalScope AI – Audio Signal Analysis & LLM Insights")
+st.title("🎧 WaveLine – Audio Signal Analysis Tool backed with LLM Insights")
 
 uploaded_file = st.file_uploader("Upload an audio file", type=["wav", "mp3", "ogg"])
 
