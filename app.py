@@ -3,9 +3,9 @@ import streamlit as st
 import librosa
 import numpy as np
 import tempfile
-from main_analysis import load_audio, extract_features
+from analysis import load_audio, extract_features
 from visualizations import *
-from llm_insights import get_insights
+from llm_initializer import get_insights
 
 from dotenv import load_dotenv
 load_dotenv()
