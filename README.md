@@ -1,6 +1,4 @@
-# 🎧 WaveLine – SignalScope AI
-
-**Wavy** 
+# 🎧 Wavy - Audio Signal Data Analysis tool with Mistral
 
 Wavy is an interactive, AI-enhanced Streamlit app for analyzing audio signals with advanced visualizations and insights from a Large Language Model (LLM). Built for signal engineers, researchers, and audio enthusiasts, this tool automatically extracts key features and provides interpretive summaries.
 
