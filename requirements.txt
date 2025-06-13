@@ -4,6 +4,6 @@ numpy
 scipy
 plotly
 soundfile
-pywt
+PyWavelets
 mistralai
 python-dotenv
