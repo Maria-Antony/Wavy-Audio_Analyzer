@@ -65,16 +65,16 @@ load_dotenv()
 
 st.set_page_config(page_title="🎧 Wavy", layout="wide", page_icon="🎧")
 
-st.markdown("""
-    <style>
-        .stApp {
-            background-color: #f0f2f6;
-        }
-        .block-container {
-            padding-top: 2rem;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+#     <style>
+#         .stApp {
+#             background-color: #f0f2f6;
+#         }
+#         .block-container {
+#             padding-top: 2rem;
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
 
 
 st.title("🎧 Wavy – AI Signal Analyzer")
